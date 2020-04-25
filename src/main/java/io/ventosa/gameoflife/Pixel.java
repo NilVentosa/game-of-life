@@ -9,9 +9,9 @@ public class Pixel {
 
   public String toString() {
     if (state == false) {
-      return "0";
+      return " ";
     } else {
-      return "1";
+      return "%";
     }
   }
 }
