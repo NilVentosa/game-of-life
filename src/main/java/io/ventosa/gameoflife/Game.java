@@ -24,6 +24,18 @@ public class Game {
     }
   }
 
+  public void setBordersTrue() {
+    for (int i = 0; i < board.width; i++) {
+      for (int j = 0; j < board.height; j++) {
+        if (i == 0 || i == board.width - 1) {
+          board.setPixel(i, j, true);
+        } else if (j == 0 || j == board.height - 1) {
+          board.setPixel(i, j, true);
+        }
+      }
+    }
+  }
+
   public void play() {
     while(true) {
       System.out.print("\033[H\033[2J");  

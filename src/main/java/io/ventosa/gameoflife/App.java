@@ -8,6 +8,7 @@ public class App
           Integer.parseInt(args[0]), 
           Integer.parseInt(args[1]), 
           Integer.parseInt(args[2]));
+
       game.play();
     }
 }
